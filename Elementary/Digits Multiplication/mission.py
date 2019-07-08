@@ -1,6 +1,12 @@
 def checkio(number: int) -> int:
-
-    return 1
+    length=len(str(number))
+    p=str(number)
+    y=1
+    for i in range(0,length):
+        x=int(p[i])
+        if x > 0:
+            y = y * x
+    return y
 
 
 if __name__ == '__main__':

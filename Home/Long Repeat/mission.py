@@ -1,14 +1,27 @@
 def long_repeat(line):
-    """
-        length the longest substring that consists of the same char
-    """
-    # your code here
-    return 0
+    x=0
+    lista=[0]
+    tmp=len(line)
+    for i in range(len(line)):
+        p=line[i]
+        if i+1 < len(line):
+            r=line[i+1]
+        else:
+            r="§"
+        x=x+1
+#        if line[i] != line[i+1]:
+        if line[i] != r:
+            lista.append(x)
+            x=0
+    lista.sort(reverse=True)
+    return lista[0]
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert long_repeat('sdsffffse') == 4, "First"
     assert long_repeat('ddvvrwwwrggg') == 3, "Second"
     assert long_repeat('abababaab') == 2, "Third"
+    assert long_repeat('abababaabccc') == 3, "end case"
     assert long_repeat('') == 0, "Empty"
+    assert long_repeat('aa') == 2, "Fourth"
     print('"Run" is good. How is "Check"?')

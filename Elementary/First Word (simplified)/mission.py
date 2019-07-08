@@ -2,8 +2,15 @@ def first_word(text: str) -> str:
     """
         returns the first word in a given text.
     """
-    # your code here
-    return text[0:2]
+    answer=[]
+    for i in text:
+        if i != " ":
+            answer.append(i)
+        else:
+            break
+##    answer = str(answer)
+    answer = ''.join(answer)
+    return answer
 
 
 if __name__ == '__main__':
