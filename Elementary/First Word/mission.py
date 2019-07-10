@@ -1,9 +1,18 @@
+import re
+
 def first_word(text: str) -> str:
     """
         returns the first word in a given text.
     """
-    # your code here
-    return text[0:2]
+    # answer = []
+    # answer=text.split(" ", maxsplit=1)
+    # import re
+    # re.sub(r'a', 'b', 'banana')
+
+    answer_wrk = re.search(r"[a-zA-z\']+", text)
+    answer = answer_wrk.group(0)
+
+    return answer
 
 
 if __name__ == '__main__':
