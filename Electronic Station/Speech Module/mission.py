@@ -15,11 +15,7 @@ def checkio(number):
     part_of_reply_second_ten=""
     part_of_reply_first_ten=""
     part_of_reply_only_zero=""
-    # part_of_reply_hundreds="FALSE"
-    # part_of_reply_other_tens="FALSE"
-    # part_of_reply_second_ten="FALSE"
-    # part_of_reply_first_ten="FALSE"
-    #
+
     if number == 0:
         part_of_reply_only_zero="zero"
 
@@ -55,13 +51,12 @@ def checkio(number):
            part_of_reply_only_zero
     answer = answer.strip()             # remove leading and trailing space
     answer = " ".join(answer.split())   # remove double space
-    #answer=part_of_reply_first_ten
+
     dummy=""
     return answer
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing
-    assert checkio(999) == 'nine hundred ninety nine', "9th example"
     assert checkio(4) == 'four', "1st example"
     assert checkio(133) == 'one hundred thirty three', "2nd example"
     assert checkio(12) == 'twelve', "3rd example"
@@ -70,5 +65,6 @@ if __name__ == '__main__':
     assert checkio(40) == 'forty', "6th example"
     assert checkio(0) == 'zero', "7th example"
     assert checkio(28) == 'twenty eight', "8th example"
+    assert checkio(999) == 'nine hundred ninety nine', "9th example"
     assert not checkio(212).endswith(' '), "Don't forget strip whitespaces at the end of string"
     print('Done! Go and Check it!')
