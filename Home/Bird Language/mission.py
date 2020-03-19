@@ -1,37 +1,39 @@
 VOWELS = "aeiouy"
 
+
 def translate(phrase):
-    answer=""
-    i=0
+    answer = ""
+    i = 0
 
     while i < len(phrase):
         if phrase[i] != " ":
-            consonant=True
-            test=phrase[i]
+            consonant = True
+            test = phrase[i]
             for j in VOWELS:
-                test=phrase[i]
+                test = phrase[i]
                 if phrase[i] == j:
-                    consonant=False
+                    consonant = False
                     break
 
             if consonant:
-                answer=answer+phrase[i]
-                i=i+2
+                answer = answer + phrase[i]
+                i = i + 2
 
             else:
-                answer=answer+phrase[i]
-                i=i+3
+                answer = answer + phrase[i]
+                i = i + 3
         else:
-            answer=answer+phrase[i]
-            i=i+1
+            answer = answer + phrase[i]
+            i = i + 1
 
     return answer
+
 
 if __name__ == '__main__':
     print("Example:")
     print(translate("hieeelalaooo"))
 
-    #These "asserts" using only for self-checking and not necessary for auto-testing
+    # These "asserts" using only for self-checking and not necessary for auto-testing
     assert translate("hieeelalaooo") == "hello", "Hi!"
     assert translate("hoooowe yyyooouuu duoooiiine") == "how you doin", "Joey?"
     assert translate("aaa bo cy da eee fe") == "a b c d e f", "Alphabet"
