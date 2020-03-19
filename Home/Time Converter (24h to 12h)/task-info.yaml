@@ -1,0 +1,137 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: |
+    def time_converter(time):
+        #replace this for solution
+
+        minuter = time_till_minuter(time)
+        half = am_pm(minuter)
+        tid = minuter_till_ampm_time(minuter)
+        tiden = str(tid) + str(half)
+
+        return tiden
+
+
+
+
+    def am_pm(tid):
+        half = " a.m."
+        # lunch 12:00 - 23:59 -> pm
+        #tid = int(tid)
+        if 720 <= tid <= 1439:
+            half = " p.m."
+
+        return half
+
+    def time_till_minuter(time):
+        tid = time.split(":")
+        timme = int(tid[0])*60
+        minut = int(tid[1])
+        minuter=timme+minut
+        return minuter
+
+    def minuter_till_ampm_time(minut):
+        if minut >= 780:
+            minut = minut - 720
+        if minut == 0:
+            minut = minut + 720
+        min = round((minut / 60 - int(minut / 60))*60)
+        tim = minut / 60
+        if minut > 600:
+            tim = ('{0:>2}'.format(int(tim)))
+        else:
+            tim = ('{0:>1}'.format(int(tim)))
+
+        min = ('{0:0>2}'.format(int(min)))
+        ampm_time = (str(tim) + ":" + str(min))
+        return ampm_time
+
+
+
+
+
+    if __name__ == '__main__':
+        print("Example:")
+        print(time_converter('12:30'))
+
+        #These "asserts" using only for self-checking and not necessary for auto-testing
+        assert minuter_till_ampm_time(720) == "12:00"
+        assert time_converter('12:30') == '12:30 p.m.'
+        assert time_converter('09:00') == '9:00 a.m.'
+        assert time_converter('13:00') == '1:00 p.m.'
+        assert time_converter('00:00') == '12:00 a.m.'
+        assert time_converter('12:00') == '12:00 p.m.'
+        assert time_converter('12:01') == '12:01 p.m.'
+        assert time_converter('18:50') == '6:50 p.m.'
+        assert time_converter('23:15') == '11:15 p.m.'
+        print("Coding complete? Click 'Check' to earn cool rewards!")
+  learner_created: false
+status: Solved
+code: |
+  def time_converter(time):
+      #replace this for solution
+
+      minuter = time_till_minuter(time)
+      half = am_pm(minuter)
+      tid = minuter_till_ampm_time(minuter)
+      tiden = str(tid) + str(half)
+
+      return tiden
+
+
+
+
+  def am_pm(tid):
+      half = " a.m."
+      # lunch 12:00 - 23:59 -> pm
+      #tid = int(tid)
+      if 720 <= tid <= 1439:
+          half = " p.m."
+
+      return half
+
+  def time_till_minuter(time):
+      tid = time.split(":")
+      timme = int(tid[0])*60
+      minut = int(tid[1])
+      minuter=timme+minut
+      return minuter
+
+  def minuter_till_ampm_time(minut):
+      if minut >= 780:
+          minut = minut - 720
+      if minut == 0:
+          minut = minut + 720
+      min = round((minut / 60 - int(minut / 60))*60)
+      tim = minut / 60
+      if minut > 600:
+          tim = ('{0:>2}'.format(int(tim)))
+      else:
+          tim = ('{0:>1}'.format(int(tim)))
+
+      min = ('{0:0>2}'.format(int(min)))
+      ampm_time = (str(tim) + ":" + str(min))
+      return ampm_time
+
+
+
+
+
+  if __name__ == '__main__':
+      print("Example:")
+      print(time_converter('12:30'))
+
+      #These "asserts" using only for self-checking and not necessary for auto-testing
+      assert minuter_till_ampm_time(720) == "12:00"
+      assert time_converter('12:30') == '12:30 p.m.'
+      assert time_converter('09:00') == '9:00 a.m.'
+      assert time_converter('13:00') == '1:00 p.m.'
+      assert time_converter('00:00') == '12:00 a.m.'
+      assert time_converter('12:00') == '12:00 p.m.'
+      assert time_converter('12:01') == '12:01 p.m.'
+      assert time_converter('18:50') == '6:50 p.m.'
+      assert time_converter('23:15') == '11:15 p.m.'
+      print("Coding complete? Click 'Check' to earn cool rewards!")
+seconds_from_change: 22204398

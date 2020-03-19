@@ -1,0 +1,25 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: |+
+    def verify_anagrams(first_word, second_word):
+        return True or False
+
+    if __name__ == '__main__':
+        #These "asserts" using only for self-checking and not necessary for auto-testing
+        assert isinstance(verify_anagrams("a", 'z'), bool), "Boolean!"
+        assert verify_anagrams("Programming", "Gram Ring Mop") == True, "Gram of code"
+        assert verify_anagrams("Hello", "Ole Oh") == False, "Hello! Ole Oh!"
+        assert verify_anagrams("Kyoto", "Tokyo") == True, "The global warming crisis of 3002"
+
+  learner_created: false
+status: Unchecked
+code: "def verify_anagrams(first_word, second_word):\r\n    return True or False\r\
+  \n\r\nif __name__ == '__main__':\r\n    #These \"asserts\" using only for self-checking\
+  \ and not necessary for auto-testing\r\n    assert isinstance(verify_anagrams(\"\
+  a\", 'z'), bool), \"Boolean!\"\r\n    assert verify_anagrams(\"Programming\", \"\
+  Gram Ring Mop\") == True, \"Gram of code\"\r\n    assert verify_anagrams(\"Hello\"\
+  , \"Ole Oh\") == False, \"Hello! Ole Oh!\"\r\n    assert verify_anagrams(\"Kyoto\"\
+  , \"Tokyo\") == True, \"The global warming crisis of 3002\"\r\n\r\n"
+seconds_from_change: 9223372036854775807

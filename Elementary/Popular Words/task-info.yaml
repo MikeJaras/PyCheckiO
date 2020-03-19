@@ -1,0 +1,44 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: |-
+    def popular_words(text: str, words: list) -> dict:
+        # your code here
+        return None
+
+
+    if __name__ == '__main__':
+        print("Example:")
+        print(popular_words('''
+    When I was One
+    I had just begun
+    When I was Two
+    I was nearly new
+    ''', ['i', 'was', 'three', 'near']))
+
+        # These "asserts" are used for self-checking and not for an auto-testing
+        assert popular_words('''
+    When I was One
+    I had just begun
+    When I was Two
+    I was nearly new
+    ''', ['i', 'was', 'three', 'near']) == {
+            'i': 4,
+            'was': 3,
+            'three': 0,
+            'near': 0
+        }
+        print("Coding complete? Click 'Check' to earn cool rewards!")
+  learner_created: false
+status: Unchecked
+code: "def popular_words(text: str, words: list) -> dict:\r\n    # your code here\r\
+  \n    return None\r\n\r\n\r\nif __name__ == '__main__':\r\n    print(\"Example:\"\
+  )\r\n    print(popular_words('''\r\nWhen I was One\r\nI had just begun\r\nWhen I\
+  \ was Two\r\nI was nearly new\r\n''', ['i', 'was', 'three', 'near']))\r\n\r\n  \
+  \  # These \"asserts\" are used for self-checking and not for an auto-testing\r\n\
+  \    assert popular_words('''\r\nWhen I was One\r\nI had just begun\r\nWhen I was\
+  \ Two\r\nI was nearly new\r\n''', ['i', 'was', 'three', 'near']) == {\r\n      \
+  \  'i': 4,\r\n        'was': 3,\r\n        'three': 0,\r\n        'near': 0\r\n\
+  \    }\r\n    print(\"Coding complete? Click 'Check' to earn cool rewards!\")"
+seconds_from_change: 9223372036854775807

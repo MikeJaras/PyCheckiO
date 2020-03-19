@@ -1,0 +1,31 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: |-
+    def completely_empty(val):
+        return True
+
+    if __name__ == '__main__':
+        #These "asserts" using only for self-checking and not necessary for auto-testing
+        assert completely_empty([]) == True, "First"
+        assert completely_empty([1]) == False, "Second"
+        assert completely_empty([[]]) == True, "Third"
+        assert completely_empty([[],[]]) == True, "Forth"
+        assert completely_empty([[[]]]) == True, "Fifth"
+        assert completely_empty([[],[1]]) == False, "Sixth"
+        assert completely_empty([0]) == False, "[0]"
+        assert completely_empty(['']) == True
+        assert completely_empty([[],[{'':'No WAY'}]]) == True
+        print('Done')
+  learner_created: false
+status: Unchecked
+code: "def completely_empty(val):\r\n    return True\r\n\r\nif __name__ == '__main__':\r\
+  \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\r\
+  \n    assert completely_empty([]) == True, \"First\"\r\n    assert completely_empty([1])\
+  \ == False, \"Second\"\r\n    assert completely_empty([[]]) == True, \"Third\"\r\
+  \n    assert completely_empty([[],[]]) == True, \"Forth\"\r\n    assert completely_empty([[[]]])\
+  \ == True, \"Fifth\"\r\n    assert completely_empty([[],[1]]) == False, \"Sixth\"\
+  \r\n    assert completely_empty([0]) == False, \"[0]\"\r\n    assert completely_empty([''])\
+  \ == True\r\n    assert completely_empty([[],[{'':'No WAY'}]]) == True\r\n    print('Done')"
+seconds_from_change: 9223372036854775807

@@ -1,0 +1,31 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def probability(dice_number, sides, target):\n    return 0.0\n\nif __name__\
+    \ == '__main__':\n    #These are only used for self-checking and are not necessary\
+    \ for auto-testing\n    def almost_equal(checked, correct, significant_digits=4):\n\
+    \        precision = 0.1 ** significant_digits\n        return correct - precision\
+    \ < checked < correct + precision\n        \n    assert(almost_equal(probability(2,\
+    \ 6, 3), 0.0556)), \"Basic example\"\n    assert(almost_equal(probability(2, 6,\
+    \ 4), 0.0833)), \"More points\"\n    assert(almost_equal(probability(2, 6, 7),\
+    \ 0.1667)), \"Maximum for two 6-sided dice\"\n    assert(almost_equal(probability(2,\
+    \ 3, 5), 0.2222)), \"Small dice\"\n    assert(almost_equal(probability(2, 3, 7),\
+    \ 0.0000)), \"Never!\"\n    assert(almost_equal(probability(3, 6, 7), 0.0694)),\
+    \ \"Three dice\"\n    assert(almost_equal(probability(10, 10, 50), 0.0375)), \"\
+    Many dice, many sides\""
+  learner_created: false
+status: Unchecked
+code: "def probability(dice_number, sides, target):\r\n    return 0.0\r\n\r\nif __name__\
+  \ == '__main__':\r\n    #These are only used for self-checking and are not necessary\
+  \ for auto-testing\r\n    def almost_equal(checked, correct, significant_digits=4):\r\
+  \n        precision = 0.1 ** significant_digits\r\n        return correct - precision\
+  \ < checked < correct + precision\r\n        \r\n    assert(almost_equal(probability(2,\
+  \ 6, 3), 0.0556)), \"Basic example\"\r\n    assert(almost_equal(probability(2, 6,\
+  \ 4), 0.0833)), \"More points\"\r\n    assert(almost_equal(probability(2, 6, 7),\
+  \ 0.1667)), \"Maximum for two 6-sided dice\"\r\n    assert(almost_equal(probability(2,\
+  \ 3, 5), 0.2222)), \"Small dice\"\r\n    assert(almost_equal(probability(2, 3, 7),\
+  \ 0.0000)), \"Never!\"\r\n    assert(almost_equal(probability(3, 6, 7), 0.0694)),\
+  \ \"Three dice\"\r\n    assert(almost_equal(probability(10, 10, 50), 0.0375)), \"\
+  Many dice, many sides\""
+seconds_from_change: 9223372036854775807

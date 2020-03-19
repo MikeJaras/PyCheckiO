@@ -1,0 +1,23 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def group_equal(els):\n    # your code here\n    return els\n\n\nif __name__\
+    \ == '__main__':\n    print(\"Example:\")\n    print(group_equal([1, 1, 4, 4,\
+    \ 4, \"hello\", \"hello\", 4]))\n    \n    # These \"asserts\" are used for self-checking\
+    \ and not for an auto-testing\n    assert group_equal([1, 1, 4, 4, 4, \"hello\"\
+    , \"hello\", 4]) == [[1,1],[4,4,4],[\"hello\",\"hello\"],[4]]\n    assert group_equal([1,\
+    \ 2, 3, 4]) == [[1], [2], [3], [4]]\n    assert group_equal([1]) == [[1]]\n  \
+    \  assert group_equal([]) == []\n    print(\"Coding complete? Click 'Check' to\
+    \ earn cool rewards!\")\n"
+  learner_created: false
+status: Unchecked
+code: "def group_equal(els):\n    # your code here\n    return els\n\n\nif __name__\
+  \ == '__main__':\n    print(\"Example:\")\n    print(group_equal([1, 1, 4, 4, 4,\
+  \ \"hello\", \"hello\", 4]))\n    \n    # These \"asserts\" are used for self-checking\
+  \ and not for an auto-testing\n    assert group_equal([1, 1, 4, 4, 4, \"hello\"\
+  , \"hello\", 4]) == [[1,1],[4,4,4],[\"hello\",\"hello\"],[4]]\n    assert group_equal([1,\
+  \ 2, 3, 4]) == [[1], [2], [3], [4]]\n    assert group_equal([1]) == [[1]]\n    assert\
+  \ group_equal([]) == []\n    print(\"Coding complete? Click 'Check' to earn cool\
+  \ rewards!\")\n"
+seconds_from_change: 9223372036854775807

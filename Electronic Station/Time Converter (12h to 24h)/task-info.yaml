@@ -1,0 +1,28 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: |-
+    def time_converter(time):
+        #replace this for solution
+        return time
+
+    if __name__ == '__main__':
+        print("Example:")
+        print(time_converter('12:30 p.m.'))
+
+        #These "asserts" using only for self-checking and not necessary for auto-testing
+        assert time_converter('12:30 p.m.') == '12:30'
+        assert time_converter('9:00 a.m.') == '09:00'
+        assert time_converter('11:15 p.m.') == '23:15'
+        print("Coding complete? Click 'Check' to earn cool rewards!")
+  learner_created: false
+status: Unchecked
+code: "def time_converter(time):\r\n    #replace this for solution\r\n    return time\r\
+  \n\r\nif __name__ == '__main__':\r\n    print(\"Example:\")\r\n    print(time_converter('12:30\
+  \ p.m.'))\r\n\r\n    #These \"asserts\" using only for self-checking and not necessary\
+  \ for auto-testing\r\n    assert time_converter('12:30 p.m.') == '12:30'\r\n   \
+  \ assert time_converter('9:00 a.m.') == '09:00'\r\n    assert time_converter('11:15\
+  \ p.m.') == '23:15'\r\n    print(\"Coding complete? Click 'Check' to earn cool rewards!\"\
+  )"
+seconds_from_change: 9223372036854775807

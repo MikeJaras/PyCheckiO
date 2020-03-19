@@ -1,0 +1,21 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "class Lamp:\n    pass\n\nif __name__ == '__main__':\n    #These \"asserts\"\
+    \ using only for self-checking and not necessary for auto-testing\n\n    lamp_1\
+    \ = Lamp()\n    lamp_2 = Lamp()\n\n    lamp_1.light() #Green\n    lamp_1.light()\
+    \ #Red\n    lamp_2.light() #Green\n    \n    assert lamp_1.light() == \"Blue\"\
+    \n    assert lamp_1.light() == \"Yellow\"\n    assert lamp_1.light() == \"Green\"\
+    \n    assert lamp_2.light() == \"Red\"\n    assert lamp_2.light() == \"Blue\"\n\
+    \    print(\"Coding complete? Let's try tests!\")"
+  learner_created: false
+status: Unchecked
+code: "class Lamp:\r\n    pass\r\n\r\nif __name__ == '__main__':\r\n    #These \"\
+  asserts\" using only for self-checking and not necessary for auto-testing\r\n\r\n\
+  \    lamp_1 = Lamp()\r\n    lamp_2 = Lamp()\r\n\r\n    lamp_1.light() #Green\r\n\
+  \    lamp_1.light() #Red\r\n    lamp_2.light() #Green\r\n    \r\n    assert lamp_1.light()\
+  \ == \"Blue\"\r\n    assert lamp_1.light() == \"Yellow\"\r\n    assert lamp_1.light()\
+  \ == \"Green\"\r\n    assert lamp_2.light() == \"Red\"\r\n    assert lamp_2.light()\
+  \ == \"Blue\"\r\n    print(\"Coding complete? Let's try tests!\")"
+seconds_from_change: 9223372036854775807

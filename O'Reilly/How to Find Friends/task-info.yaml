@@ -1,0 +1,38 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: |-
+    def check_connection(network, first, second):
+        return True or False
+
+
+    if __name__ == '__main__':
+        #These "asserts" using only for self-checking and not necessary for auto-testing
+        assert check_connection(
+            ("dr101-mr99", "mr99-out00", "dr101-out00", "scout1-scout2",
+             "scout3-scout1", "scout1-scout4", "scout4-sscout", "sscout-super"),
+            "scout2", "scout3") == True, "Scout Brotherhood"
+        assert check_connection(
+            ("dr101-mr99", "mr99-out00", "dr101-out00", "scout1-scout2",
+             "scout3-scout1", "scout1-scout4", "scout4-sscout", "sscout-super"),
+            "super", "scout2") == True, "Super Scout"
+        assert check_connection(
+            ("dr101-mr99", "mr99-out00", "dr101-out00", "scout1-scout2",
+             "scout3-scout1", "scout1-scout4", "scout4-sscout", "sscout-super"),
+            "dr101", "sscout") == False, "I don't know any scouts."
+  learner_created: false
+status: Unchecked
+code: "def check_connection(network, first, second):\r\n    return True or False\r\
+  \n\r\n\r\nif __name__ == '__main__':\r\n    #These \"asserts\" using only for self-checking\
+  \ and not necessary for auto-testing\r\n    assert check_connection(\r\n       \
+  \ (\"dr101-mr99\", \"mr99-out00\", \"dr101-out00\", \"scout1-scout2\",\r\n     \
+  \    \"scout3-scout1\", \"scout1-scout4\", \"scout4-sscout\", \"sscout-super\"),\r\
+  \n        \"scout2\", \"scout3\") == True, \"Scout Brotherhood\"\r\n    assert check_connection(\r\
+  \n        (\"dr101-mr99\", \"mr99-out00\", \"dr101-out00\", \"scout1-scout2\",\r\
+  \n         \"scout3-scout1\", \"scout1-scout4\", \"scout4-sscout\", \"sscout-super\"\
+  ),\r\n        \"super\", \"scout2\") == True, \"Super Scout\"\r\n    assert check_connection(\r\
+  \n        (\"dr101-mr99\", \"mr99-out00\", \"dr101-out00\", \"scout1-scout2\",\r\
+  \n         \"scout3-scout1\", \"scout1-scout4\", \"scout4-sscout\", \"sscout-super\"\
+  ),\r\n        \"dr101\", \"sscout\") == False, \"I don't know any scouts.\""
+seconds_from_change: 9223372036854775807

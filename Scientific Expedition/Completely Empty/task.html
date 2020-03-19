@@ -1,0 +1,58 @@
+<p>
+    You need to figure if a wellfounded and wellsized iterable is completely empty.
+</p>
+
+<p>
+    An iterable <i>x0</i> is wellfounded if there is no infinite sequence <pre style="display: inline;">x1,x2,x3...</pre> such that 
+    <pre style="display: inline;">... in x3 in x2 in x1 in x0</pre> (where <pre style="display: inline;">in</pre> is meant iteratively,
+    <pre style="display: inline;">x(n+1)</pre> will be encountered while iterating through <pre style="display: inline;">xn</pre>).
+</p>
+
+<p>
+    A wellfounded iterable is wellsized if it has only finitely many iterable elements, and all of them are wellsized.
+</p>
+
+<p>
+    A wellfounded iterable is completely empty when all its elements are completely empty.
+</p>
+
+<p>
+    Some consequences of the above definitions:
+</p>
+
+<ul>
+    <li>any empty iterable is completely empty</li>
+    <li>a non-iterable is never completely empty</li>
+    <li>the only wellfounded string is <pre style="display: inline;">''</pre>, and it is completely empty</li>
+    <li>bytes, and (possibly nested) tuples/frozensets of them are always wellfounded and wellsized</li>
+    <li><pre style="display: inline;">{'': 'Nonempty'}</pre> is a wellfounded and completely empty iterable</li>
+    <li>after <pre style="display: inline;">c=[];c.append(c)</pre>, c is a non-wellfounded iterable</li>
+    <li><pre style="display: inline;">itertools.repeat(())</pre> is wellfounded but not wellsized</li>
+    <li><pre style="display: inline;">itertools.repeat(5)</pre> is wellfounded and wellsized</li>
+</ul>
+
+
+<p>
+    <strong>Input: </strong> A wellfounded and wellsized iterable.
+</p>
+
+<p>
+    <strong>Output: </strong> A bool.
+</p>
+
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+<pre class="brush: python">
+completely_empty([]) == True
+completely_empty([1]) == False
+completely_empty([[]]) == True
+completely_empty([[],[]]) == True
+completely_empty([[[]]]) == True
+completely_empty(['']) == True
+completely_empty([[],[{'':'No WAY'}]]) == True
+</pre>
+</div>

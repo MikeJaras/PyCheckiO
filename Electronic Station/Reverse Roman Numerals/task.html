@@ -1,0 +1,78 @@
+<style>
+  .numeral-table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  .numeral-table * {
+    border: 1px solid black;
+    padding: 8px;
+    width: 50%;
+  }
+</style>
+
+<div style="text-align: center">
+  <img src="https://static.checkio.org/media/task/media/3266ec9c50344b9c8f09b063c2558c26/title.png" style="max-height: 350px; max-width: 100%">
+</div>
+
+<p>
+  <i>
+    In the CheckiO mission
+    <a href="/mission/roman-numerals/">Roman Numerals</a> you have to convert a decimal
+    number into its representation as a roman number.<br>
+    Here you have to do the same but the other way around.
+  </i>
+</p>
+
+<p>You are given a Roman number as a string and your job is to convert this number into
+  its decimal representation.
+</p>
+
+<p>
+  A valid Roman number, in the context of this mission, will only
+  contain Roman numerals as per the below table <strong>and</strong> follow the rules of
+  the subtractive notation.<br>
+  Check this
+  <a href="https://en.wikipedia.org/wiki/Roman_numerals#Roman_numeric_system" target="_blank">
+    Wikipedia article
+  </a>
+  out for more details on how to form Roman numerals.
+
+  <table class="numeral-table">
+    <tr><th>Numeral</th><th>Value</th></tr>
+    <tr><td>I</td><td>1 (unus)</td></tr>
+    <tr><td>V</td><td>5 (quinque)</td></tr>
+    <tr><td>X</td><td>10 (decem)</td></tr>
+    <tr><td>L</td><td>50 (quinquaginta)</td></tr>
+    <tr><td>C</td><td>100 (centum)</td></tr>
+    <tr><td>D</td><td>500 (quingenti)</td></tr>
+    <tr><td>M</td><td>1,000 (mille)</td></tr>
+</table>
+</p>
+
+<p>
+  <strong>Input:</strong> A roman number as a string.
+</p>
+
+<p>
+  <strong>Output:</strong> The decimal representation of the roman number as an int.
+</p>
+
+<div class="for_info_only">
+  <p>
+    <strong>Example:</strong>
+  </p>
+
+<pre class="brush: python">reverse_roman('VI') == 6
+reverse_roman('LXXVI') == 76
+reverse_roman('CDXCIX') == 499
+reverse_roman('MMMDCCCLXXXVIII') == 3888</pre>
+
+</div>
+
+<p>
+  <strong>Precondition:</strong><br>
+  len(roman_string) > 0<br>
+  all(char in "MDCLXVI" for char in roman_string) == True<br>
+  0 &lt; reverse_roman(roman_string) &lt; 4000<br>
+</p>
