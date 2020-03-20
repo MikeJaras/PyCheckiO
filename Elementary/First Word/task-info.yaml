@@ -29,4 +29,4 @@ code: "import re\n\ndef first_word(text: str) -> str:\n    \"\"\"\n        retur
   \n    assert first_word(\"... and so on ...\") == \"and\"\n    assert first_word(\"\
   hi\") == \"hi\"\n    assert first_word(\"Hello.World\") == \"Hello\"\n    print(\"\
   Coding complete? Click 'Check' to earn cool rewards!\")\n"
-seconds_from_change: 22055516
+seconds_from_change: 22122661

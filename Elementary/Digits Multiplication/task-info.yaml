@@ -20,4 +20,4 @@ code: "def checkio(number: int) -> int:\n    length=len(str(number))\n    p=str(
   \ checkio(999) == 729\n    assert checkio(1000) == 1\n    assert checkio(1111) ==\
   \ 1\n    print(\"Coding complete? Click 'Check' to review your tests and earn cool\
   \ rewards!\")\n"
-seconds_from_change: 22101026
+seconds_from_change: 22168172

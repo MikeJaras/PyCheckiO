@@ -56,4 +56,4 @@ code: |
       assert (checkio('123456123456') == False),"5th example"
       assert (checkio('QwErTy911poqqqq') == True),"6th example"
       print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")
-seconds_from_change: 23163655
+seconds_from_change: 23230800
