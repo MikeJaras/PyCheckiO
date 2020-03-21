@@ -44,29 +44,7 @@ files:
     \ tests!\")\n"
   learner_created: false
 status: Unchecked
-code: "# Taken from mission The Warriors\n\nclass Warrior(object):\n    \"\"\"klass\
-  \ för att lösa spelproblem checkio\"\"\"\n    def __init__(self, health=50, attack=5):\n\
-  \        self.health = health\n        self.attack = attack\n        if self.health\
-  \ > 0:\n            self.is_alive = True\n        else:\n            self.is_alive\
-  \ = False\n\n    def talk(self):\n        print(\"Health = \" + str(self.health))\n\
-  \        print(\"Attack = \" + str(self.attack))\n        print(\"I liv = \"  +\
-  \ str(self.is_alive))\n    pass\n\nclass Knight(Warrior):\n    def __init__(self,\
-  \ health=50, attack=7):\n        self.health = health\n        self.attack = attack\n\
-  \        if self.health > 0:\n            self.is_alive = True\n        else:\n\
-  \            self.is_alive = False\n    pass\n\ndef fight(unit_1, unit_2):\n   \
-  \ success = False\n    while unit_1.is_alive & unit_2.is_alive:\n        unit_2.health\
-  \ -= unit_1.attack\n        if unit_1.health > 0 and unit_2.health <= 0:\n     \
-  \       success = True\n        else:\n            unit_1.health -= unit_2.attack\n\
-  \        if unit_1.health > 0 and unit_2.health <= 0:\n            success = True\n\
-  \        if unit_2.health <= 0:\n            unit_2.is_alive = False\n        if\
-  \ unit_1.health <= 0:\n            unit_1.is_alive = False\n    return success\n\
-  \nif __name__ == '__main__':\n\n    chuck = Warrior()\n    bruce = Warrior()\n \
-  \   carl = Knight()\n    dave = Warrior()\n    mark = Warrior()\n\n    assert fight(chuck,\
-  \ bruce) == True\n    assert fight(dave, carl) == False\n    assert chuck.is_alive\
-  \ == True\n    assert bruce.is_alive == False\n    assert carl.is_alive == True\n\
-  \    assert dave.is_alive == False\n    assert fight(carl, mark) == False\n    assert\
-  \ carl.is_alive == False\n\n    print(\"Coding complete? Let's try tests!\")\n\n\
-  \nif __name__ == '__main__':\n    #These \"asserts\" using only for self-checking\
+code: "if __name__ == '__main__':\n    #These \"asserts\" using only for self-checking\
   \ and not necessary for auto-testing\n    \n    #fight tests\n    chuck = Warrior()\n\
   \    bruce = Warrior()\n    carl = Knight()\n    dave = Warrior()\n    mark = Warrior()\n\
   \n    assert fight(chuck, bruce) == True\n    assert fight(dave, carl) == False\n\

@@ -232,4 +232,4 @@ code: |
       assert safe_pawns({"b4","c4","d4","e4","f4","g4","e3"}) == 2
       #assert safe_pawns({"a1","b2","c3","d4","e5","f6","g7","h8"}) == 1
       print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")
-seconds_from_change: 22380052
+seconds_from_change: 22458654

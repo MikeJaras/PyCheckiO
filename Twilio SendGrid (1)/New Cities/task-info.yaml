@@ -1,0 +1,25 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def subnetworks(net, crushes):\r\n    return 0\r\n\r\nif __name__ == '__main__':\r\
+    \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\r\
+    \n    assert subnetworks([\r\n            ['A', 'B'],\r\n            ['B', 'C'],\r\
+    \n            ['C', 'D']\r\n        ], ['B']) == 2, \"First\"\r\n    assert subnetworks([\r\
+    \n            ['A', 'B'],\r\n            ['A', 'C'],\r\n            ['A', 'D'],\r\
+    \n            ['D', 'F']\r\n        ], ['A']) == 3, \"Second\"\r\n    assert subnetworks([\r\
+    \n            ['A', 'B'],\r\n            ['B', 'C'],\r\n            ['C', 'D']\r\
+    \n        ], ['C', 'D']) == 1, \"Third\"\r\n    print('Done! Check button is waiting\
+    \ for you!')"
+  learner_created: false
+status: Unchecked
+code: "def subnetworks(net, crushes):\r\n    return 0\r\n\r\nif __name__ == '__main__':\r\
+  \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\r\
+  \n    assert subnetworks([\r\n            ['A', 'B'],\r\n            ['B', 'C'],\r\
+  \n            ['C', 'D']\r\n        ], ['B']) == 2, \"First\"\r\n    assert subnetworks([\r\
+  \n            ['A', 'B'],\r\n            ['A', 'C'],\r\n            ['A', 'D'],\r\
+  \n            ['D', 'F']\r\n        ], ['A']) == 3, \"Second\"\r\n    assert subnetworks([\r\
+  \n            ['A', 'B'],\r\n            ['B', 'C'],\r\n            ['C', 'D']\r\
+  \n        ], ['C', 'D']) == 1, \"Third\"\r\n    print('Done! Check button is waiting\
+  \ for you!')"
+seconds_from_change: 9223372036854775807

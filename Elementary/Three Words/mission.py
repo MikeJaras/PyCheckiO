@@ -1,5 +1,18 @@
 def checkio(words: str) -> bool:
-    return True or False
+    counter = 0
+    result = False
+    data = words.split()
+    for temp in data:
+        if not temp.isdigit():
+            counter=counter+1
+            if counter >= 3:
+                result=True
+        else:
+            counter=0
+    dummy=""
+    return result
+
+
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':

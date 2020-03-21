@@ -1,0 +1,36 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def disconnected_users(net, users, source, crushes):\r\n    return 0\r\n\r\
+    \nif __name__ == '__main__':\r\n    #These \"asserts\" using only for self-checking\
+    \ and not necessary for auto-testing\r\n    assert disconnected_users([\r\n  \
+    \      ['A', 'B'],\r\n        ['B', 'C'],\r\n        ['C', 'D']\r\n    ], {\r\n\
+    \        'A': 10,\r\n        'B': 20,\r\n        'C': 30,\r\n        'D': 40\r\
+    \n    },\r\n        'A', ['C']) == 70, \"First\"\r\n\r\n    assert disconnected_users([\r\
+    \n        ['A', 'B'],\r\n        ['B', 'D'],\r\n        ['A', 'C'],\r\n      \
+    \  ['C', 'D']\r\n    ], {\r\n        'A': 10,\r\n        'B': 0,\r\n        'C':\
+    \ 0,\r\n        'D': 40\r\n    },\r\n        'A', ['B']) == 0, \"Second\"\r\n\r\
+    \n    assert disconnected_users([\r\n        ['A', 'B'],\r\n        ['A', 'C'],\r\
+    \n        ['A', 'D'],\r\n        ['A', 'E'],\r\n        ['A', 'F']\r\n    ], {\r\
+    \n        'A': 10,\r\n        'B': 10,\r\n        'C': 10,\r\n        'D': 10,\r\
+    \n        'E': 10,\r\n        'F': 10\r\n    },\r\n        'C', ['A']) == 50,\
+    \ \"Third\"\r\n\r\n    print('Done. Try to check now. There are a lot of other\
+    \ tests')"
+  learner_created: false
+status: Unchecked
+code: "def disconnected_users(net, users, source, crushes):\r\n    return 0\r\n\r\n\
+  if __name__ == '__main__':\r\n    #These \"asserts\" using only for self-checking\
+  \ and not necessary for auto-testing\r\n    assert disconnected_users([\r\n    \
+  \    ['A', 'B'],\r\n        ['B', 'C'],\r\n        ['C', 'D']\r\n    ], {\r\n  \
+  \      'A': 10,\r\n        'B': 20,\r\n        'C': 30,\r\n        'D': 40\r\n \
+  \   },\r\n        'A', ['C']) == 70, \"First\"\r\n\r\n    assert disconnected_users([\r\
+  \n        ['A', 'B'],\r\n        ['B', 'D'],\r\n        ['A', 'C'],\r\n        ['C',\
+  \ 'D']\r\n    ], {\r\n        'A': 10,\r\n        'B': 0,\r\n        'C': 0,\r\n\
+  \        'D': 40\r\n    },\r\n        'A', ['B']) == 0, \"Second\"\r\n\r\n    assert\
+  \ disconnected_users([\r\n        ['A', 'B'],\r\n        ['A', 'C'],\r\n       \
+  \ ['A', 'D'],\r\n        ['A', 'E'],\r\n        ['A', 'F']\r\n    ], {\r\n     \
+  \   'A': 10,\r\n        'B': 10,\r\n        'C': 10,\r\n        'D': 10,\r\n   \
+  \     'E': 10,\r\n        'F': 10\r\n    },\r\n        'C', ['A']) == 50, \"Third\"\
+  \r\n\r\n    print('Done. Try to check now. There are a lot of other tests')"
+seconds_from_change: 9223372036854775807

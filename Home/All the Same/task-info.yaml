@@ -32,4 +32,4 @@ code: "from typing import List, Any\n\n\n#def all_the_same(elements: List[Any]) 
   \    assert all_the_same(['a', 'a', 'a']) == True\n    assert all_the_same([]) ==\
   \ True\n    assert all_the_same([1]) == True\n    print(\"Coding complete? Click\
   \ 'Check' to earn cool rewards!\")\n"
-seconds_from_change: 22346654
+seconds_from_change: 22425255

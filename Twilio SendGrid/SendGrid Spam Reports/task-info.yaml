@@ -1,0 +1,17 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "import sendgrid\r\n\r\nAPI_KEY = 'Registrate your own key'\r\n\r\nsg = sendgrid.SendGridAPIClient(API_KEY)\r\
+    \n\r\ndef how_spammed(str_date):\r\n    return 1\r\n\r\nif __name__ == '__main__':\r\
+    \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\r\
+    \n    print('You had {} spam reports in 2016-01-01'.format(how_spammed('2016-01-01')))\r\
+    \n    print('Check your results')"
+  learner_created: false
+status: Unchecked
+code: "import sendgrid\r\n\r\nAPI_KEY = 'Registrate your own key'\r\n\r\nsg = sendgrid.SendGridAPIClient(API_KEY)\r\
+  \n\r\ndef how_spammed(str_date):\r\n    return 1\r\n\r\nif __name__ == '__main__':\r\
+  \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\r\
+  \n    print('You had {} spam reports in 2016-01-01'.format(how_spammed('2016-01-01')))\r\
+  \n    print('Check your results')"
+seconds_from_change: 9223372036854775807

@@ -6,11 +6,11 @@ summary: |-
   Progress in the game by solving code challenges and compete for the most elegant and creative solutions.
   <a href="http://www.checkio.org/">http://www.checkio.org/</a>
 programming_language: Python
-programming_language_version: 3.x
+programming_language_version: 3.x 3.x 3.x 3.x 3.x
 content:
 - Home
 - Elementary
-- Twilio SendGrid
+- Twilio SendGrid (1)
 - Electronic Station
 - Scientific Expedition
 - O'Reilly

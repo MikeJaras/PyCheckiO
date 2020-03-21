@@ -1,0 +1,37 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def most_crucial(net, users):\r\n    return ['B']\r\n\r\nif __name__ == '__main__':\r\
+    \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\r\
+    \n    assert most_crucial([\r\n            ['A', 'B'],\r\n            ['B', 'C']\r\
+    \n        ],{\r\n            'A': 10,\r\n            'B': 10,\r\n            'C':\
+    \ 10\r\n        }) == ['B'], 'First'\r\n\r\n    assert most_crucial([\r\n    \
+    \        ['A', 'B']\r\n        ],{\r\n            'A': 20,\r\n            'B':\
+    \ 10\r\n        }) == ['A'], 'Second'\r\n\r\n    assert most_crucial([\r\n   \
+    \         ['A', 'B'],\r\n            ['A', 'C'],\r\n            ['A', 'D'],\r\n\
+    \            ['A', 'E']\r\n        ],{\r\n            'A': 0,\r\n            'B':\
+    \ 10,\r\n            'C': 10,\r\n            'D': 10,\r\n            'E': 10\r\
+    \n        }) == ['A'], 'Third'\r\n\r\n    assert most_crucial([\r\n          \
+    \  ['A', 'B'],\r\n            ['B', 'C'],\r\n            ['C', 'D']\r\n      \
+    \  ],{\r\n            'A': 10,\r\n            'B': 20,\r\n            'C': 10,\r\
+    \n            'D': 20\r\n        }) == ['B'], 'Forth'\r\n\r\n    print('Nobody\
+    \ expected that, but you did it! It is time to share it!')"
+  learner_created: false
+status: Unchecked
+code: "def most_crucial(net, users):\r\n    return ['B']\r\n\r\nif __name__ == '__main__':\r\
+  \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\r\
+  \n    assert most_crucial([\r\n            ['A', 'B'],\r\n            ['B', 'C']\r\
+  \n        ],{\r\n            'A': 10,\r\n            'B': 10,\r\n            'C':\
+  \ 10\r\n        }) == ['B'], 'First'\r\n\r\n    assert most_crucial([\r\n      \
+  \      ['A', 'B']\r\n        ],{\r\n            'A': 20,\r\n            'B': 10\r\
+  \n        }) == ['A'], 'Second'\r\n\r\n    assert most_crucial([\r\n           \
+  \ ['A', 'B'],\r\n            ['A', 'C'],\r\n            ['A', 'D'],\r\n        \
+  \    ['A', 'E']\r\n        ],{\r\n            'A': 0,\r\n            'B': 10,\r\n\
+  \            'C': 10,\r\n            'D': 10,\r\n            'E': 10\r\n       \
+  \ }) == ['A'], 'Third'\r\n\r\n    assert most_crucial([\r\n            ['A', 'B'],\r\
+  \n            ['B', 'C'],\r\n            ['C', 'D']\r\n        ],{\r\n         \
+  \   'A': 10,\r\n            'B': 20,\r\n            'C': 10,\r\n            'D':\
+  \ 20\r\n        }) == ['B'], 'Forth'\r\n\r\n    print('Nobody expected that, but\
+  \ you did it! It is time to share it!')"
+seconds_from_change: 9223372036854775807

@@ -1,0 +1,17 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "import sendgrid\r\n\r\nAPI_KEY = 'Registrate your own key'\r\n\r\nsg = sendgrid.SendGridAPIClient(API_KEY)\r\
+    \n\r\ndef best_country(str_date):\r\n    return 'UA'\r\n\r\nif __name__ == '__main__':\r\
+    \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\r\
+    \n    print('Your best country in 2016-01-01 was ' + best_country('2016-01-01'))\r\
+    \n    print('Check your results')"
+  learner_created: false
+status: Unchecked
+code: "import sendgrid\r\n\r\nAPI_KEY = 'Registrate your own key'\r\n\r\nsg = sendgrid.SendGridAPIClient(API_KEY)\r\
+  \n\r\ndef best_country(str_date):\r\n    return 'UA'\r\n\r\nif __name__ == '__main__':\r\
+  \n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\r\
+  \n    print('Your best country in 2016-01-01 was ' + best_country('2016-01-01'))\r\
+  \n    print('Check your results')"
+seconds_from_change: 9223372036854775807
